@@ -1,0 +1,57 @@
+1. Pandas
+     Pandas is a Python library used for working with data sets. It is used for analyzing, cleaning, exploring, and data manipulation.
+         # Creating a DataFrame
+        data = {'Name': ['A', 'B', 'C'], 'Age': [2, 3, 4]}
+        df = pd.DataFrame(data)
+
+        print(df)
+
+2.NumPy
+      NumPy is a Python library used for working with arrays. It is used for numerical  operations on large and matrices.
+          # Creating a NumPy array
+          array = np.array([1, 2, 3, 4, 5])
+          result = array + 7 
+
+          print(result)
+
+
+3.TensorFlow
+        TensorFlow is a machine learning framework that has offered flexibility, scalability and performance for deep learning tasks. It is used for building and training machine learning models, particularly deep learning models.
+           # Creating a simple constant tensor
+            tensor = tf.constant([[1, 2], [3, 4]])
+
+            print(tensor)
+
+4.Keras
+     Keras is a high-level, deep learning API developed by Google for implementing neural networks.It is part of the TensorFlow library and allows you to define and train neural network models in just a few lines of code.
+         # Building a simple neural network
+           model = Sequential([
+                Dense(43, activation='relu', input_shape=(10,)),
+                Dense(1, activation='sigmoid')
+           ])
+       
+            model.compile(optimizer='adam', loss='binary_crossentropy')
+
+            print(model.summary())
+
+5.Scikit-learn(sklearn)
+       Scikit-learn is a useful library for machine learning in Python. It contains a lot of efficient tools for machine learning and statistical modeling including classification, regression, clustering and dimensionality reduction.
+           # Sample data
+             X = np.array([[1, 1], [1, 2], [2, 2], [2, 3]])
+             y = np.dot(X, np.array([1, 2])) + 3
+
+           # Creating a linear regression model
+             model = LinearRegression()
+             model.fit(X, y)
+
+             print(model.coef_)
+
+6.PyTorch
+     PyTorch is a fully featured framework for deep learning models, which is a type of machine learning that is commonly used in image recognition and language processing.
+            # Creating a tensor
+              tensor = torch.tensor([[3., 4.], [1., 2.]])
+
+            # Performing matrix multiplication
+              result = torch.matmul(tensor, tensor)
+
+              print(result)
